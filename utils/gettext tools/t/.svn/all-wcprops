@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/wordpress-i18n/!svn/ver/11944/tools/trunk/t
+END
+test_not-gettexted.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/wordpress-i18n/!svn/ver/11944/tools/trunk/t/test_not-gettexted.php
+END
+run.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/wordpress-i18n/!svn/ver/4129/tools/trunk/t/run.sh
+END

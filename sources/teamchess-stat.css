@@ -1,0 +1,48 @@
+/* Added styles for teamchess statistics plugin */
+
+.teamchess-table {
+	font-family: 'Arial Black';
+}
+
+.teamchess-header {
+	font-family: 'Arial Black';
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.teamchess-table table {
+	width: 100%;
+	border: 1px;
+	border-color: #FFFFFF;
+	padding: 2px;
+}
+
+.teamchess-tablehead {
+	font-family: 'Arial Black';
+	font-size: 1em;
+	background-color: #FFFFFF;
+}
+
+.teamchess-tablerow-0 {
+	background-color: rgb(240,175,226);
+}
+
+.teamchess-tablerow-1 {
+	background-color: rgb(240,155,226);
+}
+
+.teamchess-table .t_center
+{
+	text-align: center;
+}
+
+.teamchess-table .t_left
+{
+	text-align: left;
+	text-indent: 4px;
+}
+
+.teamchess-table .t_right
+{
+	text-align: right;
+}

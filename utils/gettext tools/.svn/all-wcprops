@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/wordpress-i18n/!svn/ver/16695/tools/trunk
+END
+setup_locale
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/wordpress-i18n/!svn/ver/2274/tools/trunk/setup_locale
+END
+not-gettexted.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/wordpress-i18n/!svn/ver/14041/tools/trunk/not-gettexted.php
+END
+makepot.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/wordpress-i18n/!svn/ver/16695/tools/trunk/makepot.php
+END
+importers-i18n.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/wordpress-i18n/!svn/ver/13143/tools/trunk/importers-i18n.php
+END
+add-textdomain.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/wordpress-i18n/!svn/ver/15618/tools/trunk/add-textdomain.php
+END
+pot-ext-meta.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/wordpress-i18n/!svn/ver/12019/tools/trunk/pot-ext-meta.php
+END
+cron-svn-pots.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/wordpress-i18n/!svn/ver/12202/tools/trunk/cron-svn-pots.php
+END
