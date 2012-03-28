@@ -69,12 +69,12 @@
 	</tr>
 <!-- END   TABLEMENU -->
 
-	<tr>
-		<td colspan="3" align="center">
-		 
+	<tr class="TCH_alwaysShow">
+		<td colspan="4" align="center">
+			&nbsp;
 		</td>
 	</tr>
-	<tr>
+	<tr class="TCH_alwaysShow">
 		<td colspan="2" align="center">
 			<button type="submit" id="Submitter" value="OK">Registrera matchen</button>
 		</td>

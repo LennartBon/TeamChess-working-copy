@@ -4,7 +4,7 @@
 Plugin Name: Teamchess Stat
 Plugin URI: ...
 Description: Maintains and displays teamchess statistics
-Version: 0.7.0
+Version: 0.8.0
 Author: Lennart Bonnevier
 
 License: GNU General Public License (GPL), v3 (or newer)
@@ -16,7 +16,7 @@ define ('TCH_PLUGIN_URL',  plugins_url() . '/' . TCH_PLUGIN_NAME . '/');
 define ('TCH_PLUGIN_DIR',  WP_PLUGIN_DIR . '/' . TCH_PLUGIN_NAME . '/');
 define ('TCH_NOTAGS',      0);
 define ('TCH_SAFETAGS',    1);
-define ('TCH_MAXTABLES',   16);
+define ('TCH_MAXTABLES',   20);
 
 global $tch_template_dir;
 global $tch_listpage_title;
@@ -41,7 +41,7 @@ function tch_striptags ($s, $allowed_tags = TCH_NOTAGS) {
 
 /* Shortcode functions and admin functions */
 if (is_admin ()) {
-	include 'admin-settings.php';
+	include 'teamchess-admin.php';
 } else {
 	include 'matchlist.php';
 	include 'player.php';
@@ -60,27 +60,9 @@ function tch_debuginfo () {
 	echo '<p>plugins_url: ' . plugins_url() . '</p>';
 	echo '<p>plugins_dir: ' . plugins_dir() . '</p>';
 	
-	$listpage = get_page_by_title (get_option ('tch_listpage_title'), ARRAY_A);
-
-	if ($listpage) {
-		$listpage_ID = $listpage['ID'];
-	} else {
-		$listpage = array (
-		 'post_type' => 'page',
-		 'post_title' => get_option ('tch_listpage_title'),
-		 'post_content' => '*** Dummy text ***',
-		 'post_status' => 'publish',
-		 'post_author' => 1,
-		);
-	
-		// Insert the post into the database
-		$listpage_ID = wp_insert_post ($listpage);
-	}
-	
-	echo '<p>Skapat/hittat sida med nr ' . $listpage_ID . '</p>';
-	exit (); */
+	exit ();
+	*/
 }
-/* */
 
 /**
  * Called on plugin activation.
@@ -132,7 +114,7 @@ function tch_addstyle () {
 		wp_register_style ('tch_styles', $tch_style_URL);
 		wp_enqueue_style ('tch_styles');
 	}
-	wp_register_style ('tch_adminstyles', TCH_PLUGIN_URL . 'admin-settings.css');
+	wp_register_style ('tch_adminstyles', TCH_PLUGIN_URL . 'teamchess-admin.css');
 	wp_enqueue_style ('tch_adminstyles');
 }
 
@@ -141,60 +123,10 @@ function tch_addstyle () {
  */
 function tch_addscript () {
 	$tch_script_URL = TCH_PLUGIN_URL . 'new-match-helper.js';
-//         $tch_style_file = TCH_PLUGIN_DIR . TCH_PLUGIN_NAME . '.css';
-//         if (file_exists ($tch_style_file)) {
 	wp_register_script ('new-match-helper', $tch_script_URL);
 	wp_enqueue_script ('new-match-helper');
 // 		}
 }
-
-/**
- * Swaps page title to match type of statistics shown.
- * @param $the_title from Wordpress
- * @return adjusted title
- */
-/* function tch_listpage_title_filter ($the_title) {
-	global $tch_listpage_title;
-
-	if ($the_title != $tch_listpage_title) {
-		return $the_title;
-	} else {
-		$q_parameters = array ();
-		
-		$q_string = html_entity_decode ($_SERVER['QUERY_STRING']);
-		parse_str ($q_string, $q_parameters);
-		
-		switch ($q_parameters['listtype']) {
-			case 'match':
-				return __('Show match', 'teamchess');
-				break;
-			case 'player':
-				return __('Show player', 'teamchess');
-				break;
-			case 'matchlist':
-				return __('All matches', 'teamchess');
-				break;
-			case 'ratinglist':
-				return __('Rating lists', 'teamchess');
-				break;
-			case 'ratingplayer':
-				return __('Rating player', 'teamchess');
-				break;
-			case 'suites':
-				return __('Longest suites', 'teamchess');
-				break;
-			case 'toplist':
-				return __('Toplist', 'teamchess');
-				break;
-			default:
-				return $the_title;
-				break;
-		}
-		
-		return __('** title-filter fallthrough **', 'teamchess');
-	}
-}
-*/
 
 /**
  * Swaps page content to generate the type of statistics requested (via URL).
@@ -288,12 +220,12 @@ if (is_admin ()) {
 	add_action ('admin_init',     'tch_admin_options');
 	add_action ('admin_enqueue_scripts', 'tch_addscript');
 	add_action ('admin_print_styles', 'tch_addstyle');
+	add_action ('wp_logout',      'tch_logout_cleanup');
 }
 
 add_action    ('wp_print_styles', 'tch_addstyle');
 register_activation_hook (__FILE__,'tch_activate' );
 
-// add_filter ('the_title',       'tch_listpage_title_filter');
 add_filter    ('the_content',     'tch_listpage_content_filter');
 
 /* Plugin shortcodes */
