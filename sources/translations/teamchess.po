@@ -2,122 +2,122 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Teamchess\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 08:38+0700\n"
-"PO-Revision-Date: 2012-01-26 08:43+0700\n"
+"POT-Creation-Date: 2012-08-24 22:18+0100\n"
+"PO-Revision-Date: 2012-08-24 22:19+0100\n"
 "Last-Translator: Lennart Bonnevier <lennart.bonnevier@gmail.com>\n"
 "Language-Team: Sole Mio <lennart.bonnevier@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _e;__;_n;_;gettext;gettext_noop\n"
-"X-Poedit-Basepath: /Users/lennartp/Sites/vskstat-working-copy/\n"
+"X-Poedit-Basepath: /Users/lennartp/Sites/TeamChess-working-copy/\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-0: sources\n"
 
-#: admin-settings.php:22
-msgid "Teamchess » Settings"
-msgstr "Teamchess » Inställningar"
+#: sources/season-toplist.php:36
+msgid "all teams"
+msgstr "alla serier"
 
-#: admin-settings.php:25
-msgid "Teamchess » Add Match"
-msgstr "Teamchess » Lägg till match"
-
-#: admin-settings.php:26
-msgid "Add Match"
-msgstr "Lägg till match"
-
-#: admin-settings.php:28
-msgid "Teamchess » Add Player"
-msgstr "Teamchess » Lägg till spelare"
-
-#: admin-settings.php:29
-msgid "Add Player"
-msgstr "Lägg till spelare"
-
-#: admin-settings.php:47
-msgid "Teamchess Settings"
-msgstr "Teamchess inställningar"
-
-#: admin-settings.php:53
-msgid "Title of page for listings"
-msgstr "Namn på sidan för statistik"
-
-#: admin-settings.php:57
-msgid "Standard team sizes"
-msgstr ""
-
-#: admin-settings.php:61
-msgid "Pre-selected team size"
-msgstr "Förvald lagstorlek"
-
-#: admin-settings.php:66
-msgid "Save Changes"
-msgstr "Spara ändringar"
-
-#: admin-settings.php:83
-msgid "Teamchess &ndash; Add new match"
-msgstr "Teamchess &ndash; Lägg till match"
-
-#: admin-settings.php:89
-#, php-format
-msgid "<h3>Match no. %d registrered</h3>\n"
-msgstr "<h3>Match nr %d registrerad</h3>\n"
-
-#: admin-settings.php:91
-msgid "<h3>Match was not registrered!</h3>\n"
-msgstr "<h3>Matchen registrerades inte!</h3>\n"
-
-#: admin-settings.php:110
-msgid "Teamchess &ndash; Add new player"
-msgstr "Teamchess &ndash; Lägg till spelare"
-
-#: admin-settings.php:116
-#, php-format
-msgid "<h3>Player no. %d registrered</h3>\n"
-msgstr "<h3>Spelare nr %d registrerad</h3>\n"
-
-#: admin-settings.php:118
-msgid "<h3>Player was not registrered!</h3>\n"
-msgstr "<h3>Spelaren registrerades inte!</h3>\n"
-
-#: admin-settings.php:138
-msgid "Teamchess &ndash; Add ratinglist"
-msgstr "Teamchess &ndash; Lägg till rankinglista"
-
-#: admin-settings.php:139
-msgid "Not yet implemented"
-msgstr "Ännu ej implementerad"
-
-#: suites.php:86
+#: sources/suites.php:86
 #, php-format
 msgid "Unknown result: %s"
 msgstr "Okänt resultat: %s"
 
-#: teamchess-stat.php:98
+#: sources/teamchess-admin.php:22
+msgid "Teamchess » Settings"
+msgstr "Teamchess » Inställningar"
+
+#: sources/teamchess-admin.php:25
+msgid "Teamchess » Add Match"
+msgstr "Teamchess » Lägg till match"
+
+#: sources/teamchess-admin.php:26
+msgid "Add Match"
+msgstr "Lägg till match"
+
+#: sources/teamchess-admin.php:28
+msgid "Teamchess » Add Player"
+msgstr "Teamchess » Lägg till spelare"
+
+#: sources/teamchess-admin.php:29
+msgid "Add Player"
+msgstr "Lägg till spelare"
+
+#: sources/teamchess-admin.php:47
+msgid "Teamchess Settings"
+msgstr "Teamchess inställningar"
+
+#: sources/teamchess-admin.php:53
+msgid "Title of page for listings"
+msgstr "Namn på sidan för statistik"
+
+#: sources/teamchess-admin.php:57
+msgid "Standard team sizes"
+msgstr "Vanliga lagstorlekar"
+
+#: sources/teamchess-admin.php:61
+msgid "Pre-selected team size"
+msgstr "Förvald lagstorlek"
+
+#: sources/teamchess-admin.php:66
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: sources/teamchess-admin.php:83
+msgid "Teamchess &ndash; Add new match"
+msgstr "Teamchess &ndash; Lägg till match"
+
+#: sources/teamchess-admin.php:89
+#, php-format
+msgid "<h3>Match no. %d registrered</h3>\n"
+msgstr "<h3>Match nr %d registrerad</h3>\n"
+
+#: sources/teamchess-admin.php:91
+msgid "<h3>Match was not registrered!</h3>\n"
+msgstr "<h3>Matchen registrerades inte!</h3>\n"
+
+#: sources/teamchess-admin.php:110
+msgid "Teamchess &ndash; Add new player"
+msgstr "Teamchess &ndash; Lägg till spelare"
+
+#: sources/teamchess-admin.php:116
+#, php-format
+msgid "<h3>Player no. %d registrered</h3>\n"
+msgstr "<h3>Spelare nr %d registrerad</h3>\n"
+
+#: sources/teamchess-admin.php:118
+msgid "<h3>Player was not registrered!</h3>\n"
+msgstr "<h3>Spelaren registrerades inte!</h3>\n"
+
+#: sources/teamchess-admin.php:138
+msgid "Teamchess &ndash; Add ratinglist"
+msgstr "Teamchess &ndash; Lägg till rankinglista"
+
+#: sources/teamchess-admin.php:139
+msgid "Not yet implemented"
+msgstr "Ännu ej implementerad"
+
+#: sources/teamchess-stat.php:82
 msgid "Statistics"
 msgstr "Statistik"
 
-#: teamchess-stat.php:109
+#: sources/teamchess-stat.php:93
 msgid "Page for Teamchess statistics. Do not delete."
 msgstr "Grundsida för Teamchess-statistiken. Radera inte denna sida."
 
-#: teamchess-stat.php:234
+#: sources/teamchess-stat.php:188
 msgid "** content-filter fallthrough **"
 msgstr "** innehållsfiltret föll igenom **"
 
-#: gettext tools/pomo/sample/app.php:56
-#, php-format
-msgid "Welcome %s!"
-msgstr "Welcome %s!"
+#~ msgid "Welcome %s!"
+#~ msgstr "Welcome %s!"
 
-#: gettext tools/pomo/sample/app.php:60
-msgid "A string with low priority!"
-msgstr "A string with low priority!"
+#~ msgid "A string with low priority!"
+#~ msgstr "A string with low priority!"
 
-#: gettext tools/pomo/sample/app.php:62
-msgid "Bye\n"
-msgstr "Bye\n"
+#~ msgid "Bye\n"
+#~ msgstr "Bye\n"
 
 #~ msgid "Remove database on delete"
 #~ msgstr "Ta bort databasen vid radering"
@@ -130,9 +130,6 @@ msgstr "Bye\n"
 
 #~ msgid "Show player"
 #~ msgstr "Visa spelare"
-
-#~ msgid "All matches"
-#~ msgstr "Alla matcher"
 
 #~ msgid "Rating lists"
 #~ msgstr "Rankinglistor"

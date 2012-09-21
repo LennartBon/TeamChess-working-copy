@@ -50,6 +50,7 @@ if (is_admin ()) {
 	include 'single-match.php';
 	include 'suites.php';
 	include 'toplist.php';
+	include 'season-toplist.php';
 }
 
 /* Debug routine, connect when necessary */
@@ -173,6 +174,12 @@ function tch_listpage_content_filter ($the_content) {
 				$kind = tch_striptags ($q_parameters['kind']);
 				return do_shortcode ('[toplist]' . $kind . '[/toplist]');
 				break;
+			case 'seasontoplist':
+				$season = tch_striptags ($q_parameters['season']);
+				$league = tch_striptags ($q_parameters['league']);
+				return do_shortcode ("[seasontoplist season={$season} league='{$league}']");
+				//echo "[seasontoplist season={$season} league={$league}]";
+				break;
 			default:
 				return $the_content;
 				break;
@@ -236,6 +243,7 @@ add_shortcode ('ratinglist',      'tch_ratinglist');
 add_shortcode ('match',           'tch_single_match');
 add_shortcode ('suites',          'tch_suites');
 add_shortcode ('toplist',         'tch_toplist');
+add_shortcode ('seasontoplist',   'tch_season_toplist');
 
 // An early version of this plugin used shortcodes in Swedish.
 // Optionally define these codes here, for backwards compatibility.

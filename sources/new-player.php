@@ -53,7 +53,11 @@ function tch_newplayer_add () {
 	$ssf_id     = (int) $_REQUEST['ssfid'];
 	$fide_id    = (int) $_REQUEST['fideid'];
 	$info       = tch_striptags ($_REQUEST['playerinfo']);
-	$primary    = ('on' == $_REQUEST['primarymember']);
+	if (isset ($_REQUEST['primarymember'])) {
+		$primary = (1 == $_REQUEST['primarymember']);
+	} else {
+		$primary = false;
+	}
 	
 	/** The two ID parameters are optional.   */
 	/* This means some juggling is necessary  */

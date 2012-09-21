@@ -31,12 +31,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 335206622;
-			PBXWorkspaceStateSaveDate = 335206622;
+			PBXPerProjectTemplateStateSaveDate = 356708995;
+			PBXWorkspaceStateSaveDate = 356708995;
 		};
 		perUserProjectItems = {
-			A7034DE813F32CA200F4CEEA /* XDModelBookmark */ = A7034DE813F32CA200F4CEEA /* XDModelBookmark */;
-			A769627513FADCCF008A8523 /* XDModelBookmark */ = A769627513FADCCF008A8523 /* XDModelBookmark */;
+			A7D0B7221542F28D0003EF76 /* PBXBookmark */ = A7D0B7221542F28D0003EF76 /* PBXBookmark */;
+			A7D0B72C1542F4330003EF76 /* PBXTextBookmark */ = A7D0B72C1542F4330003EF76 /* PBXTextBookmark */;
+			A7D0B72D1542F4330003EF76 /* XDModelBookmark */ = A7D0B72D1542F4330003EF76 /* XDModelBookmark */;
+			A7EA902B15250245005F2F0B /* XDModelBookmark */ = A7EA902B15250245005F2F0B /* XDModelBookmark */;
+			A7EA902D15250245005F2F0B /* PBXTextBookmark */ = A7EA902D15250245005F2F0B /* PBXTextBookmark */;
 		};
 		sourceControlManager = A7A49F4013F326CC005376DF /* Source Control */;
 		userBuildSettings = {
@@ -68,7 +71,7 @@
 					chosenTableWidths = (
 						103.000000,
 						25.000000,
-						86.080078,
+						85.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -78,8 +81,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {727, 220}}",
-							"{{732, 0}, {383, 220}}",
+							"{{0, 0}, {726, 218}}",
+							"{{731, 0}, {384, 218}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -98,8 +101,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {239, 220}}",
-							"{{244, 0}, {483, 220}}",
+							"{{0, 0}, {238, 218}}",
+							"{{243, 0}, {481, 218}}",
 						);
 					};
 				};
@@ -188,7 +191,7 @@
 					chosenTableWidthsPT = (
 						128.000000,
 						108.110840,
-						220.570801,
+						218.570801,
 					);
 					chosenTableWidthsRT = (
 						128.000000,
@@ -196,9 +199,16 @@
 					);
 				};
 				"xdesign model browser state key - shown/hidden" = 1;
-				"xdesign model diagram view visible rect key" = "{{-201, 10}, {1100, 346}}";
+				"xdesign model diagram view visible rect key" = "{{-201, 0}, {1100, 346}}";
 			};
 			sepNavWindowFrame = "{{15, 74}, {1115, 699}}";
+		};
+	};
+	77C8280C06725ACE000B614F /* dbrelation_AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 2886}}";
+			sepNavSelRange = "{883, 0}";
+			sepNavVisRange = "{4600, 382}";
 		};
 	};
 	8D1107260486CEB800E47090 /* dbrelation */ = {
@@ -207,12 +217,62 @@
 			A7A49F3313F326AD005376DF /* dbrelation */,
 		);
 	};
-	A7034DE813F32CA200F4CEEA /* XDModelBookmark */ = {
-		isa = XDModelBookmark;
-		fRef = 770B37EC0679A11B001EADE2 /* dbrelation_DataModel.xcdatamodel */;
-		fallbackIsa = PBXBookmark;
+	A7A49F3313F326AD005376DF /* dbrelation */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = dbrelation;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
 	};
-	A769627513FADCCF008A8523 /* XDModelBookmark */ = {
+	A7A49F4013F326CC005376DF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A7A49F4113F326CC005376DF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	A7D0B7221542F28D0003EF76 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 770B37EC0679A11B001EADE2 /* dbrelation_DataModel.xcdatamodel */;
+	};
+	A7D0B72C1542F4330003EF76 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* dbrelation_AppDelegate.m */;
+		name = "dbrelation_AppDelegate.m: 29";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 382;
+		vrLoc = 4600;
+	};
+	A7D0B72D1542F4330003EF76 /* XDModelBookmark */ = {
 		isa = XDModelBookmark;
 		fRef = 770B37EC0679A11B001EADE2 /* dbrelation_DataModel.xcdatamodel */;
 		fallbackIsa = PBXBookmark;
@@ -240,7 +300,7 @@
 				chosenTableWidths = (
 					103.000000,
 					25.000000,
-					86.080078,
+					85.080078,
 				);
 			};
 			UIContextForLayoutManager = {
@@ -250,8 +310,8 @@
 					_percentageOfCollapsedView = 0;
 					isCollapsed = yes;
 					sizes = (
-						"{{0, 0}, {727, 220}}",
-						"{{732, 0}, {383, 220}}",
+						"{{0, 0}, {726, 218}}",
+						"{{731, 0}, {384, 218}}",
 					);
 				};
 				diagramSplitGeometry = {
@@ -270,8 +330,8 @@
 					_percentageOfCollapsedView = 0;
 					isCollapsed = yes;
 					sizes = (
-						"{{0, 0}, {239, 220}}",
-						"{{244, 0}, {483, 220}}",
+						"{{0, 0}, {238, 218}}",
+						"{{243, 0}, {481, 218}}",
 					);
 				};
 			};
@@ -360,7 +420,7 @@
 				chosenTableWidthsPT = (
 					128.000000,
 					108.110840,
-					220.570801,
+					218.570801,
 				);
 				chosenTableWidthsRT = (
 					128.000000,
@@ -368,52 +428,26 @@
 				);
 			};
 			"xdesign model browser state key - shown/hidden" = 1;
-			"xdesign model diagram view visible rect key" = "{{-201, 10}, {1100, 346}}";
+			"xdesign model diagram view visible rect key" = "{{-201, 0}, {1100, 346}}";
 			"xdesign model selected entities key" = (
 			);
 			"xdesign model selected properties key" = (
 			);
 		};
 	};
-	A7A49F3313F326AD005376DF /* dbrelation */ = {
-		isa = PBXExecutable;
-		activeArgIndices = (
-		);
-		argumentStrings = (
-		);
-		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
-		configStateDict = {
-		};
-		customDataFormattersEnabled = 1;
-		dataTipCustomDataFormattersEnabled = 1;
-		dataTipShowTypeColumn = 1;
-		dataTipSortType = 0;
-		debuggerPlugin = GDBDebugging;
-		disassemblyDisplayState = 0;
-		enableDebugStr = 1;
-		environmentEntries = (
-		);
-		executableSystemSymbolLevel = 0;
-		executableUserSymbolLevel = 0;
-		libgmallocEnabled = 0;
-		name = dbrelation;
-		showTypeColumn = 0;
-		sourceDirectories = (
-		);
+	A7EA902B15250245005F2F0B /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 770B37EC0679A11B001EADE2 /* dbrelation_DataModel.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
 	};
-	A7A49F4013F326CC005376DF /* Source Control */ = {
-		isa = PBXSourceControlManager;
-		fallbackIsa = XCSourceControlManager;
-		isSCMEnabled = 0;
-		scmConfiguration = {
-			repositoryNamesForRoots = {
-				"" = "";
-			};
-		};
-	};
-	A7A49F4113F326CC005376DF /* Code sense */ = {
-		isa = PBXCodeSenseManager;
-		indexTemplatePath = "";
+	A7EA902D15250245005F2F0B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* dbrelation_AppDelegate.m */;
+		name = "dbrelation_AppDelegate.m: 29";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 466;
+		vrLoc = 4600;
 	};
 }

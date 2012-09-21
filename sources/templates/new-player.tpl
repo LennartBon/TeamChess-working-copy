@@ -31,7 +31,7 @@
 	</tr>
 	<tr>
 		<td><label for="xPrimary">Primärregistrerad</label></td>
-		<td><input type="checkbox" id="xPrimary" name="primarymember" checked="checked"/></td>
+		<td><input type="checkbox" id="xPrimary" name="primarymember" value="1" checked="checked"/></td>
 	</tr>
 
 	<tr><td colspan="2">&nbsp;</td></tr>
